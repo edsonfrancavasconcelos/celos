@@ -3,51 +3,44 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Celos Moda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="saibamais.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />    
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap"
     rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css"> 
+    <title>Celos Moda</title>
 </head>
-<div class="container">
-  <header>
-    <div class="flex-container-social-icons">
-      <a href="https:/facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https:/twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https:/instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https:/pintrest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
-      <a href="https:/youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-    <h1 class="logo-h1">Celos Moda</h1>
+<body>
+  <header class="header">
     
-   <div >
-    <nav class="flex-container-nav">
-      <ul>
-        <div class="container-li">
-        <div> 
-         <li><a  href="inicio.html">Início</a></li>
-        <li><a  href="index.html">Produtos</a></li>
-        <li><a  href="contato.html">Contato</a></li>
-  </div>
-        
-         
-      </div>
-
+    <a href="">Celos Moda</a>
+    <div class="flex-container-social-icons">
+      <a class="flex-container-social-icons-a" href="https:/facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a class="flex-container-social-icons-a" href="https:/twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="flex-container-social-icons-a" href="https:/instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="flex-container-social-icons-a" href="https:/pintrest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+      <a class="flex-container-social-icons-a" href="https:/youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href=""></a>Início</li>
+        <li><a href=""></a>Produtos</li>
+        <li><a href=""></a>Contato</li>
       </ul>
 
     </nav>
-  </div> 
-  </header>
-</div>
+   
+ </header>
 
-<div class="container-capa-principal">
-  <h1 class="flex-container-capa-principal">Seja bem-vindo à<br> Celos Moda</h1>
-</div>
-<body>
+
+
+
+
   <div class="flex-container-celos-mvv">
     <h3 class="flex-container-saiba-mais">Bem-vindo à Celos, localizada em Recife, Pernambuco! Desde o seu nascimento em 2
       de janeiro de 2023,
@@ -192,7 +185,7 @@
 
   <div class="flex-container-celos-footer">
     <footer>
-      <p class="paragrafo-footer">Endereço: Rua das Flores, 123 - Centro, Cidade - Estado, CEP: 12345-678
+      <p class="paragrafo-footer">Endereço: Rua das Flores, 123 - Centro, Cidade - PE, CEP: 12345-678
         Telefone: (11)
         1234-5678</p>
       <p class="paragrafo-footer">&copy; 2023 Celos Moda. Todos os direitos reservados.</p>
@@ -202,413 +195,7 @@
   </div>
 
 
-  <style>
-    body {
-      font-family: roboto, sans-serif;
-      margin: 0;
-      background-color: bisque;
-    }
-
-    .container {
-      /*header*/
-      background-color: #3d39393d;
-      display: flex;
-      justify-content:left;
-      position: fixed;
-      width: 100%;
-      z-index: 1;
-
-    }
-    .missao-visao-valores{
-      display: flex;
-      justify-content: center;
-      font-size: 5rem;
-    }
-
-    .container-capa-principal/*foto*/ {
-      background-image: url('img/loja-dp.jpeg');
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding-top: 10%;
-      position: relative;
-    }
-
-    .container-capa-principal::before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.5);
-      /* Define a opacidade desejada (0.5 neste exemplo) */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      /* Coloca a camada de opacidade atrás do conteúdo */
-    }
-    .logo-h1{
-      position:fixed;     
-      margin: 10px;
-     
-    }
-
-    .flex-container-capa-principal /*h1*/ {
-      font-size: 10rem;
-      color: rgb(247, 243, 243);
-      text-align: center;
-      position: relative;
-      margin-top: 1%;
-    }
-       
-
-  .flex-container-nav {
-      list-style: none;
-      margin: 0;
-      padding-bottom: 50px;
-    }
-
-
-
-    .flex-container-nav a{
-      display: flex;
-      color: #f8f3f3;
-      text-decoration: none;
-      transition: 0.5s;
-      margin-left: 2450px;
-       font-size: 2em;
-
-    }    
-
-    .flex-container-nav a:hover {
-      color: #5a5555;
-    }
-
-
-    li  {
-      list-style: none; 
-    
-
-    }
-    
-
-    .flex-container-social-icons {
-      display: flex;
-      justify-content: center;
-       
-
-    }
-
-    .flex-container-social-icons a {
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      color: #686161;
-      text-decoration: none;
-      margin: 20px;
-      margin-left: 10px;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      transition: 0.5s;
-      box-shadow: "";
-    }
-
-    .flex-container-social-icons a:hover {
-      background-color: #706767;
-      color: #fff;
-      box-shadow: 0 0 4px 4px rgba(238, 3, 3, 0.514);
-    }
-
-    .flex-container-social-icons i {
-      font-size: 30px;
-    }
-
-    .saibamais {
-      list-style: none
-    }
-
-    .saibamais-1 {
-      display: flex;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 5rem;
-    }
-
-    .flex-container-saiba-mais {
-      display: flex;
-      justify-content: center;
-      text-align: justify;
-      padding: 30px;      
-      color: #5a0c0c;
-      font-size: 35px;
-    }
-
-    .valores {
-      display: flex;
-      font-size: 30px;
-      color: #5a0c0c;
-      margin-top: -600px;
-      padding: 300px;
-    }
-
-    .saibamais-1 {
-      display: flex;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 5rem;
-
-    }
-
-    .saiba-mais {
-      display: flex;
-      padding: 300px;
-      margin-top: -50px;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 35px;
-    }
-
-    .saiba-mais-mvv {
-      display: flex;
-      justify-content: center;
-      font-size: 4rem;
-    }
-
-    .valores {
-      display: flex;
-      font-size: 40px;
-      color: #f7f4f4;
-      margin-top: 10px;
-      padding: 300px;
-    }
-
-
-
-    .paragrafo-footer {
-      color: white;
-      font-family: roboto, sans-serif;
-    }
-
-    footer {
-      margin: 0px;
-      display: flex;
-      background-color: #0a0a0a;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 50px;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 25px;
-    }
-
-
-    @media screen and (min-width: 320px) and (max-width: 1336px) {
-
-      /* Estilos para telas de tamanho médio */
-      body {
-      font-family: roboto, sans-serif;
-      margin: 0;
-      background-color: rgb(224, 156, 73);
-    }
-
-    .container {
-      /*header*/
-      background-color: #3d3939f8;
-      display: flex;
-      justify-content:left;
-      position: fixed;
-      width: 100%;
-      z-index: 1;
-
-    }
-    .missao-visao-valores{
-      display: flex;
-      justify-content: center;
-      font-size: 5rem;
-    }
-
-    .container-capa-principal/*foto*/ {
-      background-image: url('img/loja-dp.jpeg');
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding-top: 10%;
-      position: relative;
-    }
-
-    .container-capa-principal::before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.5);
-      /* Define a opacidade desejada (0.5 neste exemplo) */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      /* Coloca a camada de opacidade atrás do conteúdo */
-    }
-    .logo-h1{
-      position:fixed;     
-      margin: 10px;
-     
-    }
-
-    .flex-container-capa-principal /*h1*/ {
-      font-size: 10rem;
-      color: rgb(247, 243, 243);
-      text-align: center;
-      position: relative;
-      margin-top: 1%;
-    }
-       
-
-  .flex-container-nav {
-      list-style: none;
-      margin: 0;
-      padding-bottom: 50px;
-    }
-
-
-
-    .flex-container-nav a{
-      display: flex;
-      color: #0f0f0f;
-      text-decoration: none;
-      transition: 0.5s;
-      margin-left: 2450px;
-       font-size: 2em;
-
-    }    
-
-    .flex-container-nav a:hover {
-      color: #5a5555;
-    }
-
-
-    li  {
-      list-style: none; 
-    
-
-    }
-    
-
-    .flex-container-social-icons {
-      display: block;
-     
-
-    }
-
-    .flex-container-social-icons a {
-      display:inline;
-      justify-content: center;
-      align-items: center;
-      color: #686161;
-      text-decoration: none;
-      margin: 5px;
-      margin-left: 10px;
-      height: 30px;;
-      width: 30px;
-      border-radius: 50%;
-      background-color: #f0e8e8;
-      transition: 0.5s;
-      box-shadow: "";
-    }
-
-    .flex-container-social-icons a:hover {
-      background-color: #706767;
-      color: #fff;
-      box-shadow: 0 0 4px 4px rgba(238, 3, 3, 0.514);
-    }
-
-    .flex-container-social-icons i {
-      font-size: 3px;
-    }
-
-    .saibamais {
-      list-style: none
-    }
-
-    .saibamais-1 {
-      display: flex;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 5rem;
-    }
-
-    .flex-container-saiba-mais {
-      display: flex;
-      justify-content: center;
-      text-align: justify;
-      padding: 30px;      
-      color: #5a0c0c;
-      font-size: 35px;
-    }
-
-    .valores {
-      display: flex;
-      font-size: 30px;
-      color: #5a0c0c;
-      margin-top: -600px;
-      padding: 300px;
-    }
-
-    .saibamais-1 {
-      display: flex;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 5rem;
-
-    }
-
-    .saiba-mais {
-      display: flex;
-      padding: 300px;
-      margin-top: -50px;
-      justify-content: center;
-      color: #5a0c0c;
-      font-size: 35px;
-    }
-
-    .saiba-mais-mvv {
-      display: flex;
-      justify-content: center;
-      font-size: 4rem;
-    }
-
-    .valores {
-      display: flex;
-      font-size: 40px;
-      color: #f7f4f4;
-      margin-top: 10px;
-      padding: 300px;
-    }
-
-
-
-    .paragrafo-footer {
-      color: white;
-      font-family: roboto, sans-serif;
-      font-size: 1rem;
-    }
-
-    footer {
-      margin: 0px;
-      display: flex;
-      background-color: #0a0a0a;
-      justify-content: center;
-      padding: 50px;
-      font-family: Roboto, sans-serif;
-   
-
-
-
-    }
-  }
-  </style>
+  
 </body>
 
 </html>
