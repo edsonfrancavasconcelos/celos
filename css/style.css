@@ -9,6 +9,9 @@ p {
     font-family: Roboto, sans-serif;
    
 }
+body{
+    margin-bottom: 100px;
+}
 li{
     cursor: pointer;
 }
@@ -79,31 +82,66 @@ p{
 }
 .flex > div{
     flex: 1 1 200px;
-    margin: 20px;
+    margin: 10px;
 }
 
-/*CSS GRID*/
+/*CSS GRID-1*/
 
 .grid-1{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    max-width: 780px;
+    max-width: 800px;
+    padding: 10px;
     margin: 0 auto;
-    gap:20px;
-    
+    gap:20px; 
 
 
 
 }
 .grid-1 > div:nth-child(n + 4){
     display: grid;
-    grid-template-columns: 1fr  ;
-    gap:10px;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
     align-items: center;
 
 }
-.anuncios{
-    grid-column: 2;
-    grid-row: 3/4;
-    border-top: 10px red solid;
+.grid-1 > div.anuncios{
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
 }
+@media (max-width:600px) {
+    .grid-1{ grid-template-columns:repeat(2,1fr);
+    }
+    .grid-1 > div:nth-child(n + 4){
+        display: block;
+    }
+    .grid-1 > div.anuncios{
+       grid-column: auto;
+       grid-row: auto; 
+       order: -1;
+    }
+   
+}
+
+/*CSS GRID-2*/
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+.sideba >div{
+    margin-bottom: 10px;
+}
+ @media(max-width:600px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+ } 
+
+
