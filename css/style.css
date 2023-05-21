@@ -135,13 +135,64 @@ p{
     margin: 0 auto;
 
 }
-.sideba >div{
+.sidebar >div{
     margin-bottom: 10px;
 }
  @media(max-width:600px){
     .grid-2{
         grid-template-columns: 1fr;
     }
- } 
+    .sidebar{
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar > div{
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+ }
+ 
+ /*CSS section GRID-3*/
+
+ .grid-3{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+
+ }
+
+.grid-3-item:nth-child(1){
+grid-row: 1 / 3;
+
+}
+
+.grid-3-item{
+    display: grid;
+}
+.grid-3-item img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+}
+
+
+.grid-3-item p{
+    background-color: rgba(0, 0, 0, 0.164);
+    padding: 10px;
+    color: rgb(10, 10, 10);
+    font-size: 1rem;
+     grid-column: 1;
+    grid-row: 2/3;
+    align-self: end;
+}
+
+
+
+
+
+
 
 
