@@ -145,7 +145,13 @@
 <section class="grid-2">
 
   <div class="video">
-    <img src="img/eletronicos.jpg" >
+
+    <video id="myVideo" width="300" height="300"  controls  poster="img/loja-dp.jpeg">
+      <source src="img/studio.mp4" type="video/mp4">
+      </video>
+  <br>
+  
+   
     <h3>Celos TV</h3>
   </div>
   <div class="sidebar">
@@ -182,7 +188,7 @@
 
 </section>
 
-<section class="grid-3">
+<!--<section class="grid-3">
 
 
     <div class="grid-3-item">
@@ -201,12 +207,7 @@
           
             <p >Celos Clothing</p>
               </div>  
-    
-   
-
-
-
-</section>
+</section>-->
 
 
 
@@ -231,6 +232,24 @@
       const nextSection = document.querySelector('.next-section');
       nextSection.scrollIntoView({ behavior: 'smooth' });
     });
+
+  
+    function playVideo() {
+            var video = document.getElementById("myVideo");
+            video.play();
+        }
+
+        function pauseVideo() {
+            var video = document.getElementById("myVideo");
+            video.pause();
+        }
+
+        function stopVideo() {
+            var video = document.getElementById("myVideo");
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
   </script>
 </body>
 </html>
