@@ -100,6 +100,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:10px;
+    padding: 10px;
     align-items: center;
 
 }
@@ -128,6 +129,8 @@ p{
     display: grid;
     grid-template-columns: 1fr 200px;
      max-width: 800px;
+     gap: 10px;
+     padding: 10px;
     margin: 0 auto;
 
 
@@ -138,11 +141,17 @@ p{
     margin-bottom:0 auto;
 }
 
-#myVideo{
+#myVideo-1{
     display: grid;
     margin: 0 auto;
     width: 100%;
    
+ }
+ #myVideo-2{
+    display: grid;
+    margin: 0 auto;
+    width:100%;
+    height: 100%;
  }
    
 
