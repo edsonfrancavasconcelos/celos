@@ -46,7 +46,10 @@ p{
 
 h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+}
+h3{
+    margin: 20px;
 }
 
 img{
@@ -129,7 +132,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 200px;
      max-width: 800px;
-     gap: 20px;
+     gap: 10px;
      padding: 10px;
     margin: 0 auto;
 
@@ -139,12 +142,14 @@ p{
 
 .sidebar >div{
     margin-bottom:0 auto;
+  
 }
 
 #myVideo-1{
     display: grid;
     margin: 0 auto;
     width: 100%;
+
   
    
  }
@@ -152,7 +157,8 @@ p{
     display: grid;
     margin: 0 auto;
     width:100%;
-    height: 100%;
+
+   
   
  }
    
@@ -166,7 +172,7 @@ p{
         overflow: scroll;
     }
     .sidebar > div{
-        flex: 1 0 200px;
+        flex: 1 0 300px;
         margin: 0 10px;
     }
  }
@@ -176,10 +182,10 @@ p{
  .grid-3{
     display:grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
+    gap: 10px;
     margin: 0 auto;
     max-width: 800px;
-    gap: 20px;
+   
   
 
  }
@@ -196,6 +202,8 @@ grid-row: 1 / 3;
     grid-column: 1;
     grid-row: 1/3;
     align-self: end;
+    gap: 10px;
+    padding: 10px;
 }
 
 
