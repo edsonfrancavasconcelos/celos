@@ -133,7 +133,8 @@
     
       <div class="anuncios">
     <img src="img/eletronicos.jpg" alt="Descrição da imagem" class="imagem-opaca">    
-        <h3>Celos Anuncios</h3>       
+        <h2>Celos Anuncios</h2> 
+                    
     
        </div> 
   
@@ -145,41 +146,60 @@
 
   <div class="video">
 
-    <video id="myVideo-1" width="600" height="300"  controls  poster="img/loja.jpeg">
+    <video id="myVideo-1" width="400" controls autoplay>
       <source src="img/Video-Celos.mp4" type="video/mp4">
-    </video>  
+     
+  </video>       
+       <h3 >Celos Food</h3>
+        
+      </div>  
   
-  </div>
-  <div class="sidebar">
-    <div>
-      <video id="myVideo-2" width="300" height="200"  controls  poster="img/loja-dp.jpeg">
-        <source src="img/video2.mp4" type="video/mp4">
-        </video>     
-  
-      </div>
-   <div >
-    <video id="myVideo-2" width="300" height="200"  controls  poster="img/capa1.jpeg">
-      <source src="img/estilo.mp4" type="video/mp4">
-      </video>
     
-   </div>
-   <div >
-    <video id="myVideo-2" width="300" height="200"  controls  poster="img/capa2.jpeg">
-      <source src="img/moda.mp4" type="video/mp4">
-      </video>   
-
+        <div class="sidebar">
+ <div>
+  <video id="myVideo-2" width="400" controls>
+    <source src="img/video2.mp4" type="video/mp4">
+  
+</video>          
+      <h3 >Celos Food</h3>
+      
+  
+     </div> 
+     <div>
+      <video id="myVideo-2" width="400" controls>
+        <source src="img/moda.mp4" type="video/mp4">
+       <h3 >Celos Food</h3>
+    </video>  
+         <h3 >Celos Tech</h3>
+          
+         </div> 
+         <div>
+          <video id="myVideo-2" width="400" controls>
+            <source src="img/feminina.mp4" type="video/mp4">
+          
+        </video>       
+         <h3 >Celos Food</h3>
+          
+         </div>
+      <div >
+        <video id="myVideo-2" width="400" controls>
+          <source src="img/estilo.mp4" type="video/mp4">
+      
+      </video>       
+          <h3 >Celos Clothing</h3>
+          
        
-     </div>  
- 
-   <div >
-    <video id="myVideo-2" width="300" height="200"  controls  poster="img/capa3.jpeg">
-      <source src="img/feminina.mp4" type="video/mp4">
-      </video>    
+      </div>
+      <div >
+        <video id="myVideo-2" width="400" controls>
+          <source src="img/sem-fronteiras.mp4" type="video/mp4">
+        
+      </video>       
+          <h3 >Celos Food</h3>
+          
+        </div>
 
- 
-    </div> 
-
-  </div>
+        </div>    
 
 
 
@@ -224,28 +244,10 @@
 
   <script>
 
-    document.querySelector('.btn').addEventListener('click', function (event) {
-      event.preventDefault();
-      const nextSection = document.querySelector('.next-section');
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    });
+    
 
   
-    function playVideo() {
-            var video = document.getElementById("myVideo");
-            video.play();
-        }
-
-        function pauseVideo() {
-            var video = document.getElementById("myVideo");
-            video.pause();
-        }
-
-        function stopVideo() {
-            var video = document.getElementById("myVideo");
-            video.pause();
-            video.currentTime = 0;
-        }
+    
     </script>
   </script>
 </body>
