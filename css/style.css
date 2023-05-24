@@ -7,6 +7,7 @@ p {
     list-style: none;
     font-size: 1.2rem;
     font-family: Roboto, sans-serif;
+
    
 }
 body{
@@ -15,33 +16,21 @@ body{
 }
 li{
     cursor: pointer;
+    transition: 0.8s;
+}
+li:hover{
+    color: rgb(87, 78, 78);;
 }
 
 a {
     text-decoration: none;
     color: white;
     margin: 5px;
+    transition: 0.8s;
     
 }
-h3{
-    text-align: center;
-}
-p{
-    font-size: 13px;
-    text-align: justify;
-   
-}
-
-.header{
-    background-color: black;
-    color: white;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    
-
+a:hover{
+    color: rgb(87, 78, 78);
 }
 
 h1{
@@ -49,12 +38,60 @@ h1{
     margin-top: 60px;
 }
 h3{
+    text-align: center;
     margin: 20px;
 }
+h4{
+    text-align: justify;
+}
+p{
+    font-size: 13px;
+    text-align: justify;
+   
+}
+
+
+
+.header{
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+   
+    
+
+}
+.saibamais{
+    display:grid;
+    color: brown;   
+    width:100%;
+    font-size: 30px;
+    transition: 0.8s;
+    
+}
+.saibamais:hover{
+    color: rgba(165, 42, 42, 0.26); 
+   
+
+}
+
+
 
 img{
     max-width: 100%;
-    display: block;}
+    display: block;
+ 
+}
+
+    
    
 p{
     text-align: center; 
@@ -73,6 +110,8 @@ p{
     
   
 }
+
+
 /*CSS-FLEXB0X*/
 
 .flex{
@@ -80,12 +119,14 @@ p{
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
+   
   
    
 }
 .flex > div{
     flex: 1 1 200px;
-    margin: 10px;
+    margin: 20px;
+    
 }
 
 /*CSS GRID-1*/
@@ -93,7 +134,7 @@ p{
 .grid-1{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    max-width: 800px;  
+    max-width:800px;  
     margin: 0 auto;
     gap:10px;
 
@@ -109,7 +150,7 @@ p{
 }
 .grid-1 > div.anuncios{
     grid-column: 1;
-    grid-row: 2/5;
+    grid-row: 3/5;
     display: block;   
     color: rgb(8, 8, 8);
 }
@@ -126,6 +167,7 @@ p{
     }
    
 }
+
 
 /*CSS GRID-2*/
 
@@ -171,7 +213,7 @@ p{
  
  /*CSS section GRID-3*/
 
- .grid-3{
+ /*.grid-3{
     display:grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
@@ -207,7 +249,7 @@ grid-row: 1 / 3;
      grid-column: 1;
     grid-row: 2/3;
     align-self: end;
-}
+}*/
 
 
 
