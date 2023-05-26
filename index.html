@@ -33,12 +33,11 @@
     </div>
     <nav>
       <ul class="menu">
-        <li><a href="inicio.html"></a>Início</li>
-        <li><a href="index.html"></a>Produtos</li>
-        <li><a href="contato.html"></a>Contato</li>
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="index.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
       </ul>
-
-    </nav>
+  </nav>
 
   </header>
   <section class="flex">
@@ -145,7 +144,7 @@
         e saborosa. Além disso, as marmitas prontas são uma ótima alternativa para quem não tem tempo ou habilidade para
         cozinhar, pois basta aquecê-las e saborear uma refeição caseira e nutritiva. Na loja Celos, você encontra
         diversas opções de marmitas prontas, desde receitas tradicionais até opções vegetarianas e veganas. Experimente
-        já e descubra como é fácil ter uma alimentação saudável sem abrir mão do sabor</p>
+        já e descubra como é fácil ter uma alimentação saudável sem abrir mão do sabor.</p>
       <p class="preco">R$ 19,99</p>
       <div class="container-btn">
         <button class="btn" onclick="redirecionar()">comprar</button>
@@ -221,7 +220,7 @@
     a {
       text-decoration: none;
       color: white;
-      margin: 5px;
+      margin: 9px;
       transition: 0.8s;
 
     }
@@ -254,23 +253,29 @@
 
     }
 
-    button {
+.btn{
       flex-flow: row;
-      background-color: rgb(31, 247, 12);
+      background-color: rgb(247, 126, 12);
       padding: 10px;
       width: 100%;
-      border: none;
-      box-shadow: "";
+      border: none;      
+      font-size: 30px;
+      margin-bottom: 100px;
+      margin-top:  5px;
+      border-radius: 5px;
       transition: 0.8s;
     }
+    .btn:hover{
+      background-color: rgb(241, 172, 108);     
 
-    button:hover {
-      box-shadow: 0 0 4px 4px rgb(24, 247, 4);
     }
 
+   
     img {
       max-width: 100%;
       display: block;
+      margin-top: 100px;
+      border-radius: 5px;
 
 
     }
@@ -310,12 +315,14 @@
     }
 
     .preco {
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
       padding: 5px;
       border-radius: 8px;
       border: none;
-      margin-top: 50px;
+      font-weight: bolder;
+      background-color: rgb(245, 198, 137);
+    
 
     }
 
@@ -326,7 +333,7 @@
     }
 
     .menu li {
-      margin-left: 10px;
+      margin-left: 1px;
 
     }
 
