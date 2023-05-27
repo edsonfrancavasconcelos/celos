@@ -155,7 +155,7 @@
 
 
     .header {
-      background-color: rgba(0, 0, 0, 0.404);
+      background-color: rgb(0, 0, 0);
       color: white;
       flex-wrap: wrap;
       display: flex;
@@ -190,10 +190,13 @@
       display: grid;
       grid-gap: 10px;
       grid-template-columns: 1fr;
+      
     }
 
     label {
       grid-column: 1;
+     
+      
     }
 
   
@@ -203,15 +206,19 @@
       padding: 20px;
       border: none !important;
       border-radius: 4px;
+      cursor: pointer;
+  
       
     }
     input{
       padding: 10px;
       border: none !important;
       border-radius: 4px;
+      cursor: pointer;
     }
 
     button {
+      cursor: pointer;
       grid-column: 1;
       justify-self: start;
       background-color: green;
@@ -221,11 +228,13 @@
       border-radius: 4px;
       margin: 10px;
       transition: 0.8s;
+  
 
     }
 
     button:hover {
       background-color: rgb(136, 236, 136);
+     
     }
 
 
